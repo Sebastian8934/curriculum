@@ -1,0 +1,109 @@
+.minHeight{
+    height:140px;
+}
+
+.lenghtcard{
+    width: 14%;
+}
+
+.iconangualr{
+    width: 100%;
+    position: relative;
+    bottom: 18px;  
+}
+
+.iconangualrpwa{
+    width: 205%;
+    position: relative;
+    bottom: 17px;
+    right: 35px;
+}
+
+.iconhtml{
+    width: 100%;
+    position: relative;
+    bottom: 20px;  
+}
+
+.iconojavascript{
+    width: 113%;
+    position: relative;
+    bottom: 17px;  
+}
+
+.iconosqlserver{
+    width: 125%;
+    position: relative;
+    bottom: 17px;
+}
+
+.iconomysqlworkbench{
+    width: 125%;
+    position: relative;
+    bottom: 27px;
+    right: 8px;
+}
+
+.iconogthub{
+    width: 170%;
+    position: relative;
+    bottom: 19px;
+    right: 21px;
+}
+
+.iconoazure{
+    width: 176%;
+    position: relative;
+    bottom: 18px;
+    right: 28px;
+}
+
+.iconoindexdb{
+    width: 125%;
+    position: relative;
+    bottom: 14px;
+    right: 7px;
+}
+
+/**
+* Desktop Navigation 
+*/
+
+@media (max-width: 1366px) {
+    .paddingtop{
+        padding-top: 25px;
+    }
+  }
+
+
+/**
+* Mobile small 
+*/
+
+@media (max-width: 900px) {
+    .lenghtcard{
+        width: 33%;
+    }
+
+    .paddingtop{
+        padding-top: 0px;
+    }
+
+    .paddingleght{
+        padding-left: 12px;
+    }
+  }
+
+/**
+* Mobile Navigation 
+*/
+
+@media (max-width: 500px) {
+    .lenghtcard{
+        width: 50%;
+    }
+
+    .paddingleght{
+        padding-left: 30px;
+    }
+}
