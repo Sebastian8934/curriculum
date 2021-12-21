@@ -280,7 +280,7 @@
 
           <div class="lenghtcard col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="minHeight icon-box">
-              <div class="icon"><img src="assets/img/apple-touch-icon.png" class="iconhtml" alt=""></div>
+              <div class="icon"><img src="assets/img/Boostrap.png" class="iconhtml" alt=""></div>
             </div>
           </div>
 
@@ -436,24 +436,25 @@
 
           <div class="col-lg-6">
 
-            <form action="https://formsubmit.co/jquirozsoto3@gmail.com" target="_blank" method="POST" role="form" class="php-email-form">
+            <form id="myForm" action="https://formsubmit.co/jquirozsoto3@gmail.com" method="POST" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" required>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" >
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo" >
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" >
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required></textarea>
+                <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" ></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
-                <input class="error-message" type="hidden" name="_captcha" value="false">  
+                <input type="hidden" name="_captcha" value="false">  
+               <!-- <div class="error-message"></div>-->
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Enviar mensaje</button></div>
@@ -510,7 +511,12 @@
     const alert = document.querySelector('#alert'); 
     alert.addEventListener('click',() =>{
       toastr.info('Para mayor informacion contactarme','Informacion',{"progressBar":true});
-    })
+    });
+
+    const myForm = document.getElementById("myForm");
+
+    myForm.addEventListener('submit',() =>{
+    });
   </script>
 
 </body>
