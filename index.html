@@ -95,7 +95,7 @@
                     <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>-->
                     <li><i class="bi bi-chevron-right"></i> <strong>Titulo:</strong> <span>Tecnólogo </span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>jquirozsoto3@gmail.com</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
+                    <!--<li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>-->
                   </ul>
                 </div>
               </div>
@@ -516,7 +516,14 @@
     const myForm = document.getElementById("myForm");
 
     myForm.addEventListener('submit',() =>{
-      myForm.reset();
+
+      const myTimeout = setTimeout(myGreeting, 5000);
+
+        function myGreeting() {
+          myForm.reset();
+          toastr.success('El correo se envio con exito','Envio de correo',{"progressBar":true});
+        }
+
     });
   </script>
 
